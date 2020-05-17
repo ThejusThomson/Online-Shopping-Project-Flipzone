@@ -1,0 +1,42 @@
+<html>
+<table class="table">
+    <tr>
+        <td>Product Id</td>
+        <td>{{cloth.prodid}}</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>{{cloth.prodname}}</td>
+    </tr>
+    <tr>
+        <td>Product Image</td>
+        <td><img src = "{{ cloth.prodimage1 }}" style="width: 120px; height: 190px"/></td>
+        <td><img src = "{{ cloth.prodimage2 }}" style="width: 120px; height: 190px"/></td>
+        <td><img src = "{{ cloth.prodimage3 }}" style="width: 120px; height: 190px"/></td>
+        <td><img src = "{{ cloth.prodimage4 }}" style="width: 120px; height: 190px"/></td>
+
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>{{cloth.prodcategory}}</td>
+    </tr>
+    <tr>
+        <td>SubCategory</td>
+        <td>{{cloth.prodsubcategory}}</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>{{cloth.prodprice|currency: "INR" }}</td>
+    </tr>
+    <tr>
+        <td>Rating</td>
+        <td>
+            {{cloth.prodrating}}    <!-- <star-rating [rating] = "book.rating"></star-rating> --> 
+        </td>
+    </tr>
+    <tr>
+        <td><button (click)="addtocart(cloth)">Add to Cart</button></td>
+    </tr>                           
+   
+</table>
+</html>

@@ -1,0 +1,64 @@
+.container
+{
+    min-height: 100%;
+}
+.register-left
+{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    padding: 30px;
+}
+.register-left img
+{
+margin-top: 200px;
+margin-bottom: 18px;
+width: 300px;
+margin-right: 0px;
+animation: mover 1s infinite alternate;
+}
+
+.register-right
+{
+    margin-top: 40px;
+    border:20px;
+    background-color: oldlace;
+    border-top-left-radius: 10% 50%;
+    border-bottom-right-radius:10% 50% ;
+    padding: 15px;
+    margin-bottom: 70px;
+    
+}
+.register-right h2
+{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+.register-form
+{
+    padding: 30px;
+}
+.register-right .btn-primary
+{
+    float: center;
+    border-radius: 1.5rem;
+    border:none;
+    width: 150px;
+    background: rgb(129, 0, 0);
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0px;
+    padding:10px ;
+}
+.register-right .btn-primary:hover
+{
+    background: #000;
+}
+
+@keyframes mover
+{
+
+0%{transform:translateY(0);}
+100%{transform:translateY(-30px);}
+
+}

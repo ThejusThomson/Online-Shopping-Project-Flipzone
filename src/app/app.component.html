@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <style>
+      body
+      {
+        background: url(assets/images/kolam.jpg);
+      }
+  </style>
+
+  <body>
+<!--Header-->
+    <div class="top-nav-bar">
+      <div class="search-box">
+          <a routerLink="home">
+              <img src="assets/images/homepage/LOGOcwbg.png" class="logo">
+          </a>
+          <input type="text" class="form-controller" placeholder="Search for products, brands and more">
+          <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+      </div>
+      <div class="menu-bar">
+          <ul>
+              <li><a routerLink="/cart/nil"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
+              <li><a routerLink="/login">Login</a></li>
+              <li><a routerLink="/register">Register</a></li> 
+          </ul>
+      </div>
+      <div class="category">
+        <div class="dropdowns">
+          <button class="dropbtn">Men <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="subcategory/MenTopwear">Topwear</a>
+            <a href="subcategory/MenBottomwear">Bottomwear</a>
+            <a href="subcategory/MenSportswear">Sports Wear</a>
+            <a href="subcategory/MenFootwear">Footwear</a>
+            <a href="subcategory/MenAccessories">Accessories</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Women <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a routerLink="subcategory/Topwear">Topwear</a>
+            <a href="subcategory/Bottomwear">Bottomwear</a>
+            <a href="subcategory/Sportswear">Sports Wear</a>
+            <a href="subcategory/Footwear">Footwear</a>
+            <a href="subcategory/Accessories">Accessories</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Kids <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="subcategory/Boy">Boy Clothing</a>
+            <a href="subcategory/Girl">Girl Clothing</a>
+            <a href="subcategory/KidsFootwear">Footwear</a>
+            <a href="subcategory/Infants">Infants</a>
+            <a href="subcategory/Toys">Toys</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+<!--Header-->
+
+<!--Content-->
+<router-outlet></router-outlet>
+<!--Content-->
+
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h2>About</h2>
+          <a routerLink="/about"><h4 style="color:#d3d3d3">About Us</h4></a>
+          <a routerLink="/policy"><h4 style="color:#d3d3d3">Policy</h4></a>
+      </div>
+      <div class="footer-section links">
+          <h2>Help</h2>
+          <a routerLink="/helporder"><h4 style="color:#d3d3d3">FAQ</h4></a>
+          <a routerLink="/faq"><h4 style="color:#d3d3d3">Feedback/Comments</h4></a>
+
+       </div>
+      <div class="footer-section contact-form">
+          <h2>Contact Us</h2>
+          Email us at      :<a href="#">flipzone@gmail.com</a><br>
+          Help line number : 999999999
+          <p>Registered Office Adress:<br>
+          Flipzon Private Limited,<br>
+          Inner Ring Road,Banseli Village,<br>
+          Chennai,600031,<br>
+          TamilNadu,India</p>
+      </div>
+  </div>
+</div>
+<!--footer-->  
+  </body>
+</html>

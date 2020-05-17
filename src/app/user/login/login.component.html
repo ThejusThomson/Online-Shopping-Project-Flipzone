@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body onload='document.form1.text1.focus()'>
+        <style>
+            body{
+                background: linear-gradient(to bottom, rgba(255, 0, 0, 0.712),rgba(250, 112, 0, 0.637)),url(assets/images/kolam.jpg);
+
+            }
+        </style>
+
+        <!--Header-->    
+
+  
+  <!--Header-->
+  
+  <!--loginbody-->
+        <div class="login">
+        <div class="loginbox">
+            <img src="assets/images/loginicon.jpg" class="avatar">
+            <h1>LOGIN</h1>
+            <form name="form1" action="registeredhomepage.html">
+                <p>Username :   
+                <input type="text" name="username" [(ngModel)]="customer.email" placeholder="Enter username" required>
+                   <br><br>Password :   
+                <input type="password" name="pswd"  [(ngModel)]="customer.password" id ="pass" placeholder="Enter password" required >
+                </p><br>
+                <div>
+                    <input type="checkbox" onclick="myFunction()"><p>Show Password</p><br/><br>
+                </div>
+                    <input type="submit" name="signin" value="SIGN IN" (click)="logincheck()">
+                <div>
+                    <a href ="forgotpassword.html">Forgot password?</a><br>
+                </div><br>
+                <a href="registration.html"><input type="button" name="newuser" value="New user? Register"></a>
+            </form>
+                <script src="emailvalidate.js">
+                </script>
+        </div>
+    </div>
+        <!--loginbody-->
+
+        <!--footer-->
+
+        <!--footer-->
+
+    </body>
+</html>

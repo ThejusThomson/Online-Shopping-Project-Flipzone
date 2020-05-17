@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="text-center"   >
+       <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Net Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+           <tbody>
+                    <tr *ngFor="let prod of cart.product">
+                       <td> <img src = "{{ prod.prodimage1}}" class="img-responsive" 
+                            style="width: 70px; height: 90px" />
+                        
+                    </td>
+                    <td>{{ prod.prodname }}</td>
+                    <td>{{ prod.prodprice| currency: "INR"}}</td>
+                    <td>
+                        <input type="number" id="quan"min="1" max="5"/>
+                    </td>
+                    <td>
+                        {{prod.prodprice | currency: "INR"}}
+                    </td>
+                    
+                </tr>
+            
+            </tbody>
+       </table>
+    </div>
+</div>

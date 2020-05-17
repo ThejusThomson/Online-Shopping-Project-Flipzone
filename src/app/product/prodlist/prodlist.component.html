@@ -1,0 +1,25 @@
+<div class="container">
+    <p>Clothes</p>
+</div>
+
+<div class="container1">
+    <table class="table table-bordered" *ngIf = "clothes && clothes.length">
+        <thead>
+            <tr>
+                <th>Product Image</th>
+                <th>Product Title</th>
+                <th>Product Price</th>
+                <th>Product Rating</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr *ngFor = "let Product of clothes">
+                <td><a routerLink="/prod/{{ Product.prodid }}"><img src = "{{ Product.prodimage1 }}" style="width: 70px; height: 90px"/></a></td>
+                <td>{{Product.prodname }}</td>
+                <td>{{ Product.prodprice | currency: "INR"}}</td>
+                <td>{{Product.prodrating}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
